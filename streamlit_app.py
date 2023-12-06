@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Dict
 import numpy as np
 import streamlit as st
-
+import os
 from data_scan.utils import read_yaml
 
 config = read_yaml("data_scan/config.yaml")
