@@ -1,3 +1,5 @@
 altair
 pandas
 streamlit
+numpy>=1.21.6
+erniebot
