@@ -145,6 +145,6 @@ if __name__ == "__main__":
         if col_name == '':
             st.toast(":heavy_exclamation_mark:字段名不能为空，请查看填写提示")
         else:
-            predict_only_model(get_prompt(col_name, col_des, col_sample), llm)
+            predict(get_prompt(col_name, col_des, col_sample), llm)
 
     
