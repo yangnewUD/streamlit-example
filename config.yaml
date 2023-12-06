@@ -1,0 +1,49 @@
+title: 🧐 AI数据分类系统
+version: 0.0.10
+
+LLM_API:
+  ERNIEBot:
+    api_type: aistudio
+    access_token: your_token
+#   Qwen7B_Chat:
+#     api_url: your_api
+#   ChatGLM2_6B:
+#     api_url: your_api
+#   BaiChuan7B:
+#     api_url: your_api
+#   InternLM_7B:
+#     api_url: your_api
+
+
+encoder_batch_size: 16
+Encoder:
+  ERNIEBot:
+    api_type: aistudio
+    access_token: your_token
+#   m3e-small:
+#     model_path: assets/models/m3e-small
+
+# text splitter
+SENTENCE_SIZE: 200
+
+top_k: 5
+
+Parameter:
+  max_length:
+    min_value: 0
+    max_value: 4096
+    default: 1024
+    step: 1
+    tip: 生成结果时的最大token数
+  top_p:
+    min_value: 0.0
+    max_value: 1.0
+    default: 0.7
+    step: 0.01
+    tip: 用于控制模型生成文本时，选择下一个单词的概率分布的范围。
+  temperature:
+    min_value: 0.01
+    max_value: 1.0
+    default: 0.01
+    step: 0.01
+    tip: 用于调整模型生成文本时的创造性程度，较高的temperature将使模型更有可能生成新颖、独特的文本，而较低的温度则更有可能生成常见或常规的文本
