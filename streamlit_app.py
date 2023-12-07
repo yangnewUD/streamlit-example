@@ -136,7 +136,7 @@ if __name__ == "__main__":
         col1, col2 = st.columns(2)
         for item in leibie:
             col1.text(item)
-    st.header('请输入数据: :red[字段名] 、字段注释和样例数据', divider='rainbow',help="字段名必填;注释和样例数据选填")
+    st.header('请输入数据: :red[字段名] 、字段注释和样例数据', divider='rainbow',help="字段名必填;注释和样例数据选填，样例数据用,分隔，最好输入3个以上")
     menu_col1, menu_col2, menu_col3 = st.columns([1, 1, 1])
     col_name = menu_col1.text_input("字段名*")
     col_des = menu_col2.text_input("字段注释")
